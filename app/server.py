@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1-LhIN4E0zFv5cmQEfDK8PBOIo5dtFSZY?alt=media&key=AIzaSyAyaJ-oeyT6xNySLIL9jV3SlvqSFj7tEc8'
+export_file_name = 'stage-2-256-rn50.pth'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['agriculture','artisinal_mine','bare_ground','blooming','blow_down','clear','cloudy','conventional_mine','cultivation','habitation','haze','partly_cloudy','primary', 'road','selective_logging','slash_burn','water']
 path = Path(__file__).parent
 
 app = Starlette()
